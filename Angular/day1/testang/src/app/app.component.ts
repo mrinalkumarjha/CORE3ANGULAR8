@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { UserService } from './Service/user.service';
 import { User } from './Model/user';
+import { walk } from './Service/walk.service';
 
 @Component({
   selector: 'app-root',
   template:`
   <button (click)="FetchUsers()">List of Users</button>
+  <button (click)="ctr=walk()">Walk</button>
+  {{ctr}}
   <ul>
     <li *ngFor="let ctr of temp">
       ID: {{ctr.id}}
@@ -34,6 +37,11 @@ this.temp = data;
 console.log(err);
   }
 )
+}
+
+walk(): string {
+  const obj = new walk();
+  return obj.walkNoida();
 }
 
 }
