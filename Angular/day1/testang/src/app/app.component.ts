@@ -13,7 +13,9 @@ import { User } from './Model/user';
       Email:{{ctr.email}}
       </li>
 
-  </ul>`,
+  </ul>
+  <app-form></app-form>
+  `,
   providers: [UserService]
 })
 export class AppComponent {

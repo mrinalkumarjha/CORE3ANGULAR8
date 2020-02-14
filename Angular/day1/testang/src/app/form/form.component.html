@@ -1,0 +1,21 @@
+<form #UserForm='ngForm' (ngSubmit)="SaveData(UserForm)">
+    <div>
+    <label>username</label>
+    <input type="text" name="usr" ngModel>
+</div>
+
+<div>
+    <label>password</label>
+    <input type="text" name="pwd" ngModel>
+</div>
+
+<div>
+    <label>Age</label>
+    <input type="text" name="age" ngModel>
+</div>
+
+<div>
+    <label>Age</label>
+    <input type="submit" value="Register">
+</div>
+</form>
