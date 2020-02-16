@@ -1,0 +1,46 @@
+<div>
+    <br>
+    <b>Directive example</b>
+    <br>
+</div>
+
+<div>
+    <b>Directive are element which change the appreance or behaviour of DOM</b>
+    <br>
+    Three types of directive available <br>
+    1: Component
+    <br>
+    2: Structural (ngIf, ngFor, ngSwitch)
+    <br>
+    3: Attribute Directive: 
+</div>
+
+<br>
+<b>Component: it is type of directive with template style and logic part.<br>
+We change dom appereance by adding button textbox etc.
+</b>
+
+
+<br>
+<b>Structural Directive</b>
+<br>
+<div *ngIf="ngifvar">This div will show only if var ngif value true</div>
+<button (click)="ChangeNgifvar()">ChangeNgIfVal</button>
+<br>
+
+
+<br>
+<b>NGSTYLE EXAMPLE Directive</b>
+<br>
+<div  [ngStyle]="{'color': ngifvar ?'red' : 'blue'}">
+    This div is ngstyle example. this will be red id ngifvar is true else blue.</div>
+    <br>
+    <!-- ng var value : {{ngifvar}} -->
+<br>
+
+<br>
+<b>NGclass EXAMPLE Directive</b>
+<br>
+<div  [ngClass]="{'classred': ngifvar == true}">This div is ngclass example. this will be red</div>
+[ngClass]="{cssClass: expression}"
+<br>

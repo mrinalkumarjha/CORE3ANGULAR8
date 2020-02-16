@@ -18,6 +18,7 @@ import { walk } from './Service/walk.service';
 
   </ul>
   <app-form></app-form>
+  <app-directive><app-directive>
   `,
   providers: [UserService]
 })
