@@ -1,0 +1,40 @@
+Agenda :
+
+1: create 2 endpoint incore
+2: fetchdata(), post()
+3: check by postman
+4: deploy in iis
+
+
+connection
+Data Source=DESKTOP-DNQ619S;Initial Catalog=test;Integrated Security=True
+
+dotnet tool install --global dotnet-ef
+dotnet add package microsoft.entityframeworkcore
+dotnet add package microsoft.entityframeworkcore.design
+dotnet add package microsoft.entityframeworkcore.sqlserver
+
+structurre:
+model
+repository
+json
+startup
+Data
+endpoint > will expose reposiitory fun to endpoint
+
+-- migration -- in migration script is created
+dotnet ef migrations add initial
+dotnet ef database update
+
+dotnet build
+dotnet run
+
+----
+iis deploy
+
+1: create extension folder in root
+2: create file MyExtension.cs
+
+some file added..
+compile dotnet build
+dotnet publish
