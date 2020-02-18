@@ -7,18 +7,24 @@ import { walk } from './Service/walk.service';
   selector: 'app-root',
   template:`
   <button (click)="FetchUsers()">List of Users</button>
-  <button (click)="ctr=walk()">Walk</button>
-  {{ctr}}
-  <ul>
+  <!-- <button (click)="ctr=walk()">Walk</button> -->
+  <!-- {{ctr}} -->
+  <!-- <ul>
     <li *ngFor="let ctr of temp">
       ID: {{ctr.id}}
       Name:{{ctr.name}}
       Email:{{ctr.email}}
       </li>
 
-  </ul>
+  </ul> -->
   <app-form></app-form>
-  <app-directive><app-directive>
+  <!-- <app-directive><app-directive> -->
+<nav>
+  <a routerLink='/supp'>Supplier</a>
+  <router-outlet></router-outlet>
+</nav>
+
+
   `,
   providers: [UserService]
 })

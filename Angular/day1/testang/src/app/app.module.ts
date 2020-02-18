@@ -5,16 +5,25 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { FormComponent } from './form/form.component';
-import { DirectiveComponent } from './directive/directive.component';
+import { SupplierComponent } from './supplier/supplier.component';
+
+import {RouterModule, Routes} from '@angular/router';
+
+// routes is class for creating route table
+const myroute: Routes = [
+  {path: 'supp', component: SupplierComponent}
+]
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    DirectiveComponent
+    SupplierComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule
+    BrowserModule, HttpClientModule, FormsModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
