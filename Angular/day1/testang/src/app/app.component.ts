@@ -18,6 +18,7 @@ import { walk } from './Service/walk.service';
 
   </ul> -->
   <app-form></app-form>
+  <app-dependency-injection></app-dependency-injection>
   <!-- <app-directive><app-directive> -->
 <nav>
   <a routerLink='/supp'>Supplier</a>

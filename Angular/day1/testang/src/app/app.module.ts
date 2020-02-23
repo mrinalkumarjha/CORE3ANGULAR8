@@ -8,6 +8,7 @@ import { FormComponent } from './form/form.component';
 import { SupplierComponent } from './supplier/supplier.component';
 
 import {RouterModule, Routes} from '@angular/router';
+import { DependencyInjectionComponent } from './dependency-injection/dependency-injection.component';
 
 // routes is class for creating route table
 const myroute: Routes = [
@@ -19,7 +20,8 @@ const myroute: Routes = [
   declarations: [
     AppComponent,
     FormComponent,
-    SupplierComponent
+    SupplierComponent,
+    DependencyInjectionComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule,
