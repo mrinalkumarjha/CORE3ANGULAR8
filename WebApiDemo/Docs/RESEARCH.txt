@@ -1,0 +1,4 @@
+ALTER TABLE Country
+ADD ISOCode VARCHAR(5) NOT NULL,
+AptisEnabled BIT NOT NULL  DEFAULT(1),
+AptisAccreditedEnabled BIT NOT NULL DEFAULT(1)
