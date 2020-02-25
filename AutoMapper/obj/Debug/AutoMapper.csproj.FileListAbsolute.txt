@@ -1,0 +1,9 @@
+C:\Users\Mitesh Jha\source\repos\AutoMapper\bin\Debug\AutoMapper.exe.config
+C:\Users\Mitesh Jha\source\repos\AutoMapper\bin\Debug\AutoMapper.exe
+C:\Users\Mitesh Jha\source\repos\AutoMapper\bin\Debug\AutoMapper.pdb
+C:\Users\Mitesh Jha\source\repos\AutoMapper\bin\Debug\AutoMapper.dll
+C:\Users\Mitesh Jha\source\repos\AutoMapper\bin\Debug\AutoMapper.xml
+C:\Users\Mitesh Jha\source\repos\AutoMapper\obj\Debug\AutoMapper.csprojAssemblyReference.cache
+C:\Users\Mitesh Jha\source\repos\AutoMapper\obj\Debug\AutoMapper.csproj.CopyComplete
+C:\Users\Mitesh Jha\source\repos\AutoMapper\obj\Debug\AutoMapper.exe
+C:\Users\Mitesh Jha\source\repos\AutoMapper\obj\Debug\AutoMapper.pdb
