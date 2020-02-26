@@ -1,0 +1,11 @@
+For unit test 
+1: add ref of api proj to unit test proj
+2: then add one more ref of system.web.http.dll from api bin dir to unit test proj
+3: add connection string in app.config
+4: install entityframework 6 in unit test project.
+5: write test cases and right click anywhere on function and run test.
+6: To debug test case 
+In the Visual Studio editor, set a breakpoint in one or more test methods that you want to debug. ...
+In Test Explorer, select the test methods and then choose Debug Selected Tests on the right-click menu
+
+
