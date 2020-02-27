@@ -1,0 +1,86 @@
+IN SSDL
+
+inside  Schema node
+
+<Function Name="country_sp_details" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+</Function>
+
+      <Function Name="country_sp_update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="ISOCode" Type="varchar" Mode="In" />
+
+
+ <!-- CSDL content -->
+
+
+
+inside EntityContainer element
+
+ <FunctionImport Name="country_sp_details" ReturnType="Collection(testModel.country_sp_details_Result)">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+ </FunctionImport>
+
+<FunctionImport Name="employee_sp_details" ReturnType="Collection(testModel.employee_sp_details_Result)">
+            <Parameter Name="Ecode" Mode="In" Type="Int32" />
+          </FunctionImport>
+
+<FunctionImport Name="country_sp_update">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="ISOCode" Mode="In" Type="String" />
+ </FunctionImport>
+
+<ComplexType Name="employee_sp_details_Result">
+          <Property Type="Int32" Name="Ecode" Nullable="false" />
+          <Property Type="String" Name="Ename" Nullable="true" />
+ </ComplexType>
+
+
+and
+
+ <ComplexType Name="country_sp_details_Result">
+          <Property Type="String" Name="ISOCode" Nullable="false" MaxLength="5" />
+          <Property Type="Boolean" Name="AptisEnabled" Nullable="false" />
+          <Property Type="Boolean" Name="AptisAccreditedEnabled" Nullable="false" />
+          <Property Type="Boolean" Name="active" Nullable="false" />
+          <Property Type="DateTime" Name="createdon" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+   </ComplexType>
+
+ <ComplexType Name="employee_sp_details_Result">
+          <Property Type="Int32" Name="Ecode" Nullable="false" />
+          <Property Type="String" Name="Ename" Nullable="true" />
+        </ComplexType>
+
+
+
+
+ <!-- C-S mapping content -->
+
+inside  EntityContainerMapping
+
+
+   <FunctionImportMapping FunctionImportName="country_sp_details" FunctionName="testModel.Store.country_sp_details">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="testModel.country_sp_details_Result">
+                <ScalarProperty Name="ISOCode" ColumnName="ISOCode" />
+                <ScalarProperty Name="AptisEnabled" ColumnName="AptisEnabled" />
+                <ScalarProperty Name="AptisAccreditedEnabled" ColumnName="AptisAccreditedEnabled" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="createdon" ColumnName="createdon" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+
+<FunctionImportMapping FunctionImportName="country_sp_update" FunctionName="testModel.Store.country_sp_update" />
+
+
+ <FunctionImportMapping FunctionImportName="employee_sp_details" FunctionName="testModel.Store.employee_sp_details">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="testModel.employee_sp_details_Result">
+                <ScalarProperty Name="Ecode" ColumnName="Ecode" />
+                <ScalarProperty Name="Ename" ColumnName="Ename" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
