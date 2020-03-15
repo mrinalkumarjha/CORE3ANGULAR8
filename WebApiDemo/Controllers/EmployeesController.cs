@@ -18,6 +18,7 @@ namespace WebApiDemo.Controllers
             }
         }
 
+        [Route("{id:int}", Name ="GetStudentById")]
         public HttpResponseMessage Get(int id)
         {
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
@@ -44,7 +45,8 @@ namespace WebApiDemo.Controllers
                     entities.SaveChanges();
 
                     var message = Request.CreateResponse(HttpStatusCode.Created, employee);
-                    message.Headers.Location = new Uri(Request.RequestUri + "/" + employee.ID.ToString());
+                    //message.Headers.Location = new Uri(Request.RequestUri + "/" + employee.ID.ToString());   // first way
+                    message.Headers.Location = new Uri(Url.Link("GetStudentById", new { id=employee.ID})); // using route name
                     return message;
                 }
             }

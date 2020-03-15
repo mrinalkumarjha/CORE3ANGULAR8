@@ -15,8 +15,10 @@ namespace WebApiDemo
             // Web API configuration and services
 
             // Web API routes
+            // this line enables attribute routing in web api.
             config.MapHttpAttributeRoutes();
 
+            // this is convention route created by webapi when we create new project
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
