@@ -3,37 +3,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Web.Http;
 using EmployeeDataAccess;
+using WebApiDemo.Filters;
 
 namespace WebApiDemo.Controllers
 {
     public class EmployeesController : ApiController
     {
-        public IEnumerable<Employee> Get()
-        {
-            using(EmployeeDBEntities entities = new EmployeeDBEntities())
-            {
-              return  entities.Employees.ToList();
-            }
-        }
+        //public IEnumerable<Employee> Get()
+        //{
+        //    using (EmployeeDBEntities entities = new EmployeeDBEntities())
+        //    {
+        //        return entities.Employees.ToList();
+        //    }
+        //}
 
-        [Route("{id:int}", Name ="GetStudentById")]
-        public HttpResponseMessage Get(int id)
+        [BasicAuthenticationAttribute]
+        [HttpGet]
+        public HttpResponseMessage Get(string gender = "ALL")
         {
+            string username = Thread.CurrentPrincipal.Identity.Name;
+
             using (EmployeeDBEntities entities = new EmployeeDBEntities())
             {
-                var entity = entities.Employees.FirstOrDefault(e => e.ID == id);
-                if(entities != null)
+                switch (username.ToLower())
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, entities);
-                }
-                else
-                {
-                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Employee with id = " + id.ToString() + "not found");
+                    case "male":
+                        return Request.CreateResponse(HttpStatusCode.OK,
+                         entities.Employees.Where(emp => emp.Gender.ToLower().Equals(username)).ToList());
+                    case "female":
+                        return Request.CreateResponse(HttpStatusCode.OK,
+                         entities.Employees.Where(emp => emp.Gender.ToLower().Equals(username)).ToList());
+                    default:
+                        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "uid pass not correct");
+
                 }
             }
+
         }
+
+        //[Route("{id:int}", Name = "GetStudentById")]
+        //public HttpResponseMessage Get(int id)
+        //{
+        //    using (EmployeeDBEntities entities = new EmployeeDBEntities())
+        //    {
+        //        var entity = entities.Employees.FirstOrDefault(e => e.ID == id);
+        //        if (entities != null)
+        //        {
+        //            return Request.CreateResponse(HttpStatusCode.OK, entities);
+        //        }
+        //        else
+        //        {
+        //            return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Employee with id = " + id.ToString() + "not found");
+        //        }
+        //    }
+        //}
 
         public HttpResponseMessage Post([FromBody] Employee employee)
         {

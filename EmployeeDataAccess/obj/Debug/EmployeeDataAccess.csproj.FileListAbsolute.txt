@@ -9,3 +9,14 @@ C:\Users\Mitesh Jha\source\repos\EmployeeDataAccess\obj\Debug\EmployeeDataAccess
 C:\Users\Mitesh Jha\source\repos\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csproj.CopyComplete
 C:\Users\Mitesh Jha\source\repos\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
 C:\Users\Mitesh Jha\source\repos\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll.config
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.pdb
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EntityFramework.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EntityFramework.xml
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojAssemblyReference.cache
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csproj.CopyComplete
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb

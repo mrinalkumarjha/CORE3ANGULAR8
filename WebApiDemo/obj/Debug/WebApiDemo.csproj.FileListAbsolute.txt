@@ -89,9 +89,6 @@ C:\Users\Mitesh Jha\source\repos\WebApiDemo\bin\EmployeeDataAccess.dll.config
 C:\Users\Mitesh Jha\source\repos\WebApiDemo\bin\EntityFramework.xml
 C:\Users\Mitesh Jha\source\repos\WebApiDemo\bin\EntityFramework.SqlServer.dll
 C:\Users\Mitesh Jha\source\repos\WebApiDemo\bin\EntityFramework.SqlServer.xml
-D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.csprojAssemblyReference.cache
-D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.dll
-D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.pdb
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\WebApiDemo.dll.config
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\WebApiDemo.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\WebApiDemo.pdb
@@ -146,6 +143,7 @@ D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\roslyn\VBC
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\roslyn\VBCSCompiler.exe.config
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\Antlr3.Runtime.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeDataAccess.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeService.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EntityFramework.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EntityFramework.SqlServer.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -164,6 +162,8 @@ D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\System.Web
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\WebGrease.dll
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeDataAccess.pdb
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeDataAccess.dll.config
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeService.pdb
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EmployeeService.dll.config
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EntityFramework.xml
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\EntityFramework.SqlServer.xml
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\Newtonsoft.Json.xml
@@ -179,4 +179,7 @@ D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\System.Web
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\System.Web.WebPages.Razor.xml
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\Antlr3.Runtime.pdb
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.csprojAssemblyReference.cache
 D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.csproj.CopyComplete
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.dll
+D:\Project\DotNetCoreLearning\SandeepSir\CORE3ANGULAR8\WebApiDemo\obj\Debug\WebApiDemo.pdb

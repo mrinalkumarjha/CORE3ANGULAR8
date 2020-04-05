@@ -164,6 +164,7 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Filters\BasicAuthenticationAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,6 +258,10 @@
     <ProjectReference Include="..\EmployeeDataAccess\EmployeeDataAccess.csproj">
       <Project>{a48d3ba0-3393-4595-b684-f28551043152}</Project>
       <Name>EmployeeDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeService\EmployeeService.csproj">
+      <Project>{7c6059fd-ca3a-43a9-bd2a-c4c18d89c43f}</Project>
+      <Name>EmployeeService</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
